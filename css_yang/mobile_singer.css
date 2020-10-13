@@ -80,6 +80,10 @@ body{
 	display: none;
 }
 
+#btn{
+	display: none;
+}
+
 #control:checked ~.header_menu{
 	display: block;
 }
