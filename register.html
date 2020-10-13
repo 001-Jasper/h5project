@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <link rel="stylesheet" href="css/register.css"  />
+        <script type="text/javascript" src="js/jquery.js"></script>
+
+        
+    </head>
+    <body background="images/scene.jpg">
+    <div class="mainbody middle">
+    <form class="form-box front">
+      <div class="title">
+        <h1>XX音乐登录 </h1>
+      </div>
+      <div>
+        <input class="input-normal" type="text" placeholder="用户名" />
+        <input class="input-normal" type="password" placeholder="密码" />
+            <button class="btn-submit" type="submit">
+                  <a href="http://www.baidu.com/"> 登录</a>  
+            </button>
+            <style> 
+                a{ text-decoration:none} 
+            </style>
+      </div>
+      <div>
+        <p style="margin-top: 40px">如果你没有账号点击这里 <a id="signup">注册</a></p>
+          <script type="text/javascript">
+
+       // 点击sigup触发翻转样式
+      
+          $("#signup").click(function() {
+         $(".middle").toggleClass("middle-flip");
+        });
+        
+        </script>
+        
+      </div>
+    </form>
+ <!-- 上下两个表单基本上没区别，一个front，一个back  -->
+    <form class="form-box back">
+      <div class="title">
+        <h1>XX音乐注册</h1>
+      </div>
+      <div>
+        <input class="input-normal" type="text" placeholder="用户名" />
+        <input class="input-normal" type="password" placeholder="密码" />
+        <button class="btn-submit" type="submit">注册</button>
+      </div>
+      <div>
+        <p style="margin-top: 40px">已有账号 ? 你可以点击这里<a id="login">登录</a></p>
+        <script type="text/javascript">
+
+      // 点击login触发翻转样式
+        $("#login").click(function() {
+        $(".middle").toggleClass("middle-flip");
+        });
+        
+        </script>
+        
+      </div>
+    </form>
+    </div>
+    </body>
+
+</html>

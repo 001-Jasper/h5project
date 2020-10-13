@@ -1,0 +1,99 @@
+
+/*规定中间圆角矩形尺寸*/
+.mainbody {
+  height: 440px;
+  width: 400px;
+}
+
+.middle {
+  /*使左上角对应到父元素的中心*/
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  /*向左向上偏移50%*/
+  transform: translate(-50%, -50%);
+}
+
+/*界面中心的矩形框*/
+.form-box {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background:#ABCAA2;
+  border-radius: 20px;
+}
+
+/*输入框，用于输入用户名和密码*/
+.input-normal {
+  width: 300px;
+  height: 50px;
+  margin: 50px auto;
+  padding: 0;
+  text-align: center;
+  border-radius: 20px;
+  outline: none;
+  display: block;
+  transition: 0.3s;
+  border: 1px solid #65F378;/*用户名密码界面边框颜色*/
+}
+
+/*登录和注册的圆角矩形处*/
+.btn-submit {
+  width: 100px;
+  height: 40px;
+  margin: auto;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  border-radius: 12px;
+  display: block;
+  background: #51826A;/*登录注册按钮颜色*/
+  transition: 0.3s;
+}
+
+.front {
+  transform: rotateY(0deg);
+}
+
+/* 将back旋转180度，背面朝向用户，我这边选y轴的 */
+.back {
+  transform: rotateY(-180deg);
+}
+
+.front,
+.back {
+  position: absolute;
+  /* 然后设置为背面朝向用户时不可见 */
+  backface-visibility: hidden;
+  transition: 0.3s linear;
+}
+
+/* 将front旋转180度 */
+.middle-flip .front {
+  transform: rotateY(180deg);
+}
+/* 将back旋转180度 */
+.middle-flip .back {
+  transform: rotateY(0deg);
+}
+
+/*标题样式*/
+.title{
+  font-size: 16px;
+  text-align: center;
+  color:#15A6CE;
+  font-family: sans-serif;
+}
+
+p {
+  margin: 15px auto;
+  padding: 0;
+  font-size: 16px;
+  color: white;
+  display: block;
+  text-align: center;
+}
+a {
+  color: #15A6CE;
+  cursor: pointer;
+}

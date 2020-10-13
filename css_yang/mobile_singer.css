@@ -1,0 +1,299 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 100%;
+}
+
+.header_pic{
+	width: 170px;
+	height: 46px;
+}
+.header {
+	width: 100%;
+	margin: 0 auto;
+	background-color: #31c27c;
+}
+
+.header_menu ul li{
+	background-color: #fff;
+	border-bottom: 1px solid #f2f2f2;
+	text-align: center;
+	padding: 10px;
+	width: 100%;
+}
+
+.header_menu ul li a{
+	text-decoration: none;
+	color: #000;
+
+}
+
+.logo_pc{
+	display: none;
+}
+
+.logo_mobile{
+	margin-top: 10px;
+	height: 46px;
+	width: 170px;
+}
+
+.login, .green, .pay{
+	display: none;
+}
+
+.search{
+	padding: 10px;
+}
+
+.search .a {
+	position: relative;
+	border-radius: 10px;
+	color:#cccccc;
+	width: 90%;
+	height: 25px;
+	border: 1px solid;
+	outline: none;
+}
+
+.search_icon{
+	position: relative;
+	width: 25px;
+	height: 25px;
+	border-radius: 10px;
+}
+
+.nav_btn{
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	color: #fff;
+}
+
+.nav_con{
+	display: none;
+}
+
+.header_menu{
+	display: none;
+}
+
+#control:checked ~.header_menu{
+	display: block;
+}
+
+/*身体*/
+/*歌曲部分*/
+
+.singer_part{
+	width: 100%;
+	height: 240px;
+	padding-top: 20px;
+}
+
+.singer_data{
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+.singer_pho{
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+}
+
+.singer_detail{
+	width: 100%;
+	height: 50px;
+	margin-left: -14px;
+}
+
+.singer_name{
+	width: 200px;
+	height: 40px;
+}
+
+.singer_name a{
+	font-size: 20px;
+	color: #000;
+	text-decoration: none;
+}
+
+.data_list{
+	width: 200px;
+	height: 30px;
+}
+
+.data_list strong{
+	font-weight: lighter;
+}
+
+.data_list .data_list_item{
+	margin-top: 10px;
+	margin-left: -30px;
+	margin-right: 32px;
+	float: left;
+	list-style: none;
+	font-weight: lighter;
+}
+
+/*.data_list{
+	width: 100%;
+	height: 30px;
+	margin-top: 10px;
+	margin-left: -10px;
+	line-height: 40px;
+	overflow: hidden;
+	font-size: 14px;
+	font-weight: lighter;
+}
+
+.data_list strong{
+	font-weight: lighter;
+}
+
+.data_list .data_list_item{
+	float: left;
+	line-height: 40px;
+	list-style: none;
+}*/
+
+
+.singer_intro, .toolbar{
+	display: none;
+}
+
+.middle {
+	width: 100%;
+	height: 200px;
+	margin: 0 auto;
+}
+
+.title1 {
+	width: 100%;
+	height: 50px;
+	color: #000;
+	text-align: center;
+}
+
+.control{
+	width: 25%;
+	height: 150px;
+}
+
+.things {
+	display: flex;
+	width: 100%;
+	height: 150px;
+}
+
+.things>div {
+	text-align: center;
+}
+
+.things div img {
+	width: 90px;
+	height: 90px;
+}
+
+.ablum {
+	color: #000;
+	font-size: 10px;
+}
+
+.play {
+	color: #939393;
+	font-size: 8px;
+}
+
+/*MV部分*/
+
+.bodyer {
+	width: 100%;
+	height: 450px;
+}
+
+.mv_3, .mv_4{
+	display: none;
+}
+
+.title2 {
+	width: 100%;
+	height: 50px;
+	color: #000;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.singer1 div img {
+	width: 235px;
+	height: 130px;
+}
+
+.singer1>div {
+	text-align: center;
+}
+
+.sing1 {
+	color: #000;
+	font-size: 10px;
+}
+
+.singp1 {
+	color: #bfbdbe;
+	font-size: 8px;
+}
+
+.singp2 {
+	color: #bfbdbe;
+	font-size: 8px;
+}
+
+/*脚部*/
+.about {
+	width: 100%;
+	text-align: center;
+	margin: 20px auto;
+}
+
+.footer_pic{
+	width: 74px;
+	height: 20px;
+}
+
+.last_mobile{
+	font-size: 7px;
+	text-align: center;
+}
+.title_menu, .first, .last_pc{
+
+	display: none;
+}
+
+.fixed_part{
+	display: none;
+}
+
+.btn_bottom_player{
+	position: fixed;
+	width: 36px;
+	height: 36px;
+	right: 20px;
+	bottom: 150px;
+	border-radius: 3px;
+	background-color: #d6d6d6;
+}
+
+.fixed_part_mob{
+	margin-top: 7px;
+	margin-left: 7px;
+	width: 22px;
+	height: 22px;
+}
+
+#totop{
+	display: none;
+}

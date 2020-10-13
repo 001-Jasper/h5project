@@ -1,0 +1,142 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Adam Young</title>
+
+		<link rel="stylesheet" type="text/css" href="css/adam.css"/>
+		<!--自适应使用-->
+		<link media="(max-width: 500px)"  rel="stylesheet" href="css/adamMobile.css">
+
+		<script src="js/jquery.js"></script>
+		<script>
+		/*显示更多*/
+		
+			$(function(){
+			$("#more").hide(); //默认隐藏
+			$("#a1").on("click",function(){
+			$("#more").toggle();//显示隐藏切换
+			})
+			})
+			
+		/*上下滚动*/
+		$(function(){
+			   $("a").click(function(){
+				   if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+					   var $target = $(this.hash);
+					   $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
+					   if ($target.length) {
+						   var targetOffset = $target.offset().top;
+					   $('html,body').animate({scrollTop: targetOffset},1500);
+					   return false;
+					   }
+				   }
+			   });
+			});
+		</script>
+	</head>
+	
+	<body>
+		<div class="first">
+			<h1>Adam Young <span>Scores</span></h1>
+		</div>
+		<div class="third">
+		</div>
+		<div class="second">
+			<div class="second_in">
+			<div class="second_left">
+				<img src="images/29.jpg"/>
+				<p>
+				</p>
+				<span>THE ENDURANCE</span>
+				<h4>2016.12.1</h4>
+			</div>
+			<div class="second_middle">
+				<img src="images/30.jpg"/>
+				<p>
+				</p>
+				<span>MOUNT RUSHMORE</span>
+				<h4>2016.11.1</h4>
+			</div>
+			<div class="second_right">
+				<img src="images/31.jpg"/>
+				<p>
+				</p>
+				<span>VOYAGER 1</span>
+				<h4>2016.10.1</h4>
+			</div>
+			<div class="second_left">
+				<img src="images/32.jpg"/>
+				<p>
+				</p>
+				<span>CORDUROY ROAD</span>
+				<h4>2016.9.1</h4>
+			</div>
+			<div class="second_middle">
+				<img src="images/33.jpg"/>
+				<p>
+				</p>
+				<span>PROJECT EXCELSIOR</span>
+				<h4>2016.8.1</h4>
+			</div>
+			<div class="second_right">
+				<img src="images/34.jpg"/>
+				<p>
+				</p>
+				<span>MIRACLE IN THE ANDES</span>
+				<h4>2016.7.1</h4>
+			</div>
+			<div class="second_left">
+				<img src="images/35.jpg"/>
+				<p>
+				</p>
+				<span>OMAHA BEACH</span>
+				<h4>2016.6.1</h4>
+			</div>
+			<div class="second_middle">
+				<img src="images/36.jpg"/>
+				<p>
+				</p>
+				<span>THE ASCENT OF EVEREST</span>
+				<h4>2016.5.1</h4>
+			</div>
+			<div class="second_right">
+				<img src="images/41.jpg"/>
+				<p>
+				</p>
+				<span>THE SPIRIT OF ST LOUIS</span>
+				<h4>2016.4.1</h4>
+			</div>
+			</div>
+		</div>
+		<div class="bottom">
+			<a href="#more" id ="a1">更多+</a>
+		</div>
+		<div class="fourth" id="more">
+			<div class="fourth left">
+				<img src="images/37.jpg"/>
+				<p>
+				</p>
+				<span>RMS TITANIC</span>
+				<h4>2016.3.1</h4>
+			</div>
+			<div class="fourth middle">
+			</div>
+			<div class="fourth right">
+				<img src="images/42.jpg"/>
+				<p>
+				</p>
+				<span>APOLLO 11</span>
+				<h4>2016.2.1</h4>
+			</div>
+		</div>
+		<div class="foot">
+			<p>
+			Adam Young Scores
+			</p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="toTop" content="true">
+	<title>音乐推荐</title>
+	<link rel="shortcut icon" href="img/icon_yang.jpg">
+	<link media="(min-width:760px)"rel="stylesheet" href="./css_yang/recommend.css">
+	<link media="(max-width:760px)" rel="stylesheet"  type="text/css" href="./css_yang/mobile_recommend.css">
+	<script src="http://www.jq22.com/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="./jquery_yang/toTop.js"></script>
+</head>
+<body>
+	<!-- 头部分 -->
+	<a href="#" class="btn_bottom_top" id="toTop"><img src="./img/totop.png" class="fixed_part"></a>
+	<a href="#" class="btn_bottom_player"><img src="./img/player.png" class="fixed_part"></a>
+	<a href="#" class="btn_bottom_player"><img src="./img/player.png" class="fixed_part_mob"></a>
+	<!-- 此处添加播放器页面地址 -->
+	<div class="header">
+		<a href="https://y.qq.com/" target="_blank">
+			<img class="logo_pc" src="./img/logo.png">
+			<img class="logo_mobile" src="./img/logo.png">
+		</a>
+		<div class="header_menu">
+			<ul>
+				<li><a href="#">音乐馆</a></li>
+				<li><a href="#">我的音乐</a></li>
+				<li><a href="#">客户端</a></li>
+				<li><a href="#">音乐号</a></li>
+				<li><a href="#">VIP</a></li>
+			</ul>
+		</div>
+		<label for="control" class="nav_btn">菜单</label>
+		<input type="checkbox" id="control" class="nav_con">
+		<div class="search">
+			<input class="a" type="text" placeholder="搜索音乐、MV、歌单、用户..." >
+			<a href="#" target="_blank" class="search_out"><img class="search_icon" src="./img/search.png"></a>
+			<span class="login">登录</span>
+		</div>
+		<span class="green">开通绿钻豪华版</span>
+		<span class="pay">开通付费包</span>
+	</div>
+	<!-- banner部分 -->
+	<div class="banner">
+		<div class="all">
+			<div class="title">新歌推荐</div>
+			<div class="title_menu">
+				<div class="l">
+				<ul>
+					<li>内地</li>
+					<li>港台</li>
+					<li>欧美</li>
+					<li>韩国</li>
+					<li>日本</li>
+				</ul>
+				</div>
+				<div class="r">全部></div>
+			</div>
+			<div class="singer">
+				<div class="singer_erea">
+					<img class="singer_pic" src="./img/zhangliangyin.jpg">
+					<div>
+						<span class="sing">《谁知道》</span>
+							<br>
+						<span class="singp">张靓颖</span>
+					</div>
+				</div>
+				<div class="singer_erea">
+					<img class="singer_pic" src="./img/bird.jpg">
+					<div>
+						<span class="sing">《飞鸟和蝉》</span>
+							<br>
+						<span class="singp">任然</span>
+					</div>
+				</div>
+				<div class="singer_erea">
+					<img class="singer_pic" src="./img/gonorth.jpg">
+					<div>
+						<span class="sing">《一路向北》</span>
+							<br>
+						<span class="singp">周杰伦</span>
+					</div>
+				</div>
+				<div class="singer_erea">
+					<img class="singer_pic" src="./img/newrap.jpg">
+					<div>
+						<span class="sing">说唱新世代 第7期</span>
+							<br>
+						<span class="singp">中国新说唱</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- middle部分 -->
+	<div class="middle">
+		<div class="title1">歌单推荐</div>
+			<div class="things">
+				<div class="control">
+					<img class="ablum_data" src="./img/popular.png">
+					<div>
+						<span class="ablum">伤感流行<!-- ｜歌词都在向我哭诉 --></span>
+							<br>
+						<span class="play">播放量：69.6万</span>
+					</div>
+				</div>
+				<div class="control">
+					<img class="ablum_data" src="./img/webmusic.jpg">
+					<div>
+						<span class="ablum">一首歌的时间爱上<!-- 【不是花火呀】 --></span>
+							<br>
+						<span class="play">播放量：76.2万</span>
+					</div>
+				</div>
+				<div class="control">
+					<img class="ablum_data" src="./img/jaylist.jpg">
+					<div>
+						<span class="ablum"><!-- 那些年，我们一起听过的 -->周杰伦</span>
+							<br>
+						<span class="play">播放量：32287.3万</span>
+					</div>
+				</div>
+				<div class="control">
+					<img class="ablum_data" src="./img/daolanglist.jpg">
+					<div>
+						<span class="ablum">
+						刀郎的老歌</span>
+							<br>
+						<span class="play">播放量：467.8万</span>
+					</div>
+				</div>
+			</div>
+	</div>
+	<!-- bodyer部分 -->
+	<div class="bodyer">
+		<div class="next">
+			<div class="title2">MV推荐</div>
+				<div class="title_menu1">
+					<div class="l1">
+						<ul>
+							<li>全部</li>
+							<li>内地</li>
+							<li>港台</li>
+							<li>欧美</li>
+							<li>韩国</li>
+							<li>日本</li>
+						</ul>
+					</div>
+					<div class="r1">全部></div>
+				</div>
+				<div class="singer1">
+					<div>
+						<img src="./img/MV (1).jpg" alt="">
+						<div>
+							<span class="sing1">告白气球</span>
+								<br>
+							<span class="singp1">周杰伦</span>
+								<br>
+							<span class="singp2">
+							5174.9万
+							</span>
+						</div>
+					</div>
+					<div>
+						<img src="./img/MV (2).jpg" alt="">
+						<div>
+							<span class="sing1">说好不哭</span>
+								<br>
+							<span class="singp1">周杰伦</span>
+								<br>
+							<span class="singp2">5763.1万</span>
+						</div>
+					</div>
+					<div class="mv_3">
+						<img src="./img/MV (3).jpg" alt="">
+						<div>
+							<span class="sing1">算什么男人</span>
+								<br>
+							<span class="singp1">周杰伦</span>
+								<br>
+							<span class="singp2">1793.4万</span>
+						</div>
+					</div>
+					<div class="mv_4">
+						<img src="./img/MV (4).jpg" alt="">
+						<div>
+							<span class="sing1">晴天</span>
+								<br>
+							<span class="singp1">周杰伦</span>
+								<br>
+							<span class="singp2">
+							3307.8万</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- footer部分 -->
+	<div class="footer">
+		<div class="later">
+			<div class="first">
+				<div class="load">
+					<div class="explain">
+						<span>下载QQ音乐客户端</span>
+					</div>
+					<div class="locn1">
+						<div class="PC">
+							<img src="./img/pc.png" alt="PC版">
+								<br>
+							<span>PC版</span>
+						</div>
+						<div class="Mac">
+							<img src="./img/mac.png" alt="Mac版">
+								<br>
+							<span>Mac版</span>
+						</div>
+						<div class="Android">
+							<img src="./img/android.png" alt="Android版">
+								<br>
+							<span>Android版</span>
+						</div>
+						<div class="iPhone">
+							<img src="./img/ios.png" alt="iPhone版">
+								<br>
+							<span>iPhone版</span>
+						</div>
+					</div>
+				</div>
+				<div class="product">
+					<div class="explain">
+						<span>特色产品</span>
+					</div>
+					<div class="locn2">
+						<div class="Ksong">
+							<img src="./img/kmusic.png" alt="全民K歌">
+								<br>
+							<span>全民K歌</span>
+								<br>
+							<span>车载互联</span>
+						</div>
+						<div class="Super">
+							<img src="./img/super.png" alt="Super Sound">
+								<br>
+							<span>Super Sound</span>
+								<br>
+							<span>QQ演出</span>
+						</div>
+						<div class="Qplay">
+							<img src="./img/qplay.png" alt="QPlay">
+								<br>
+							<span>QPlay</span>
+						</div>
+					</div>
+				</div>
+				<div class="compete">
+					<div class="explain">
+						<span>合作链接</span>
+					</div>
+					<div class="locn3">
+						<div class="left">
+							<ul>
+								<li>CJ E&M</li>
+								<li>最新版QQ</li>
+								<li>QQ浏览器</li>
+								<li>星钻</li>
+							</ul>
+						</div>
+						<div class="mid">
+							<ul>
+								<li>腾讯视频</li>
+								<li>腾讯社交广告</li>
+								<li>画报</li>
+								<li>腾讯微云</li>
+							</ul>
+						</div>
+						<div class="right">
+							<ul>
+								<li>手机QQ空间</li>
+								<li>电脑管家</li>
+								<li>黄钻活动</li>
+								<li>更多</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="about">
+				<span class="last_pc">
+					关于腾讯 | About Tencent | 服务条款 | 用户服务协议 | 隐私政策 | 广告服务 | 腾讯招聘 | 客服中心 | 网站导航
+				</span>
+					<br>
+				<span class="last_pc">
+					Copyright  1998 - 2020 Tencent. All Rights Reserved.
+				</span>
+				<img src="./img/logo.png" class="footer_pic"><br>
+				<span class="last_mobile">
+					Copyright  1998 - 2020 Tencent.All Rights Reserved.
+				</span>
+					<br>
+				<span class="last_mobile">
+					联系电话：0755-86013388 QQ群：55209235
+				</span>
+				<span class="last_pc">
+					腾讯公司©版权所有 腾讯网络文化经营许可证
+				</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

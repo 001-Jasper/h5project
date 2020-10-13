@@ -1,0 +1,106 @@
+.second{
+    width:100%;
+    height:3270px;
+    background:#434347;
+    /*position:relative;*/
+}
+.second .second_in{
+    width:100%;
+    height: 100%;
+    /*background: pink;*/
+    margin: 0 auto;
+}
+.second_in .second_left{
+    /*margin-bottom:1.5%;*/
+    /*margin-left:18%;*/
+    width:300px;
+    height:300px;
+    /*background:green;*/
+    /*float:left;*/
+    overflow:hidden;
+    /*position:relative;*/
+    border-radius: 10px;
+    margin:30px 38px auto;
+}
+.second_in .second_middle{
+    /*margin-left:1.5%;*/
+    /*margin-right:1.5%;*/
+    /*margin-bottom:1.5%;*/
+    width:300px;
+    height:300px;
+    /*background:orange;*/
+    /*float:left;*/
+    overflow:hidden;
+    /*position:relative;*/
+    border-radius: 10px;
+    margin:30px 38px auto;
+}
+.second_in .second_right{
+    /*margin-right:5%;*/
+    /*margin-bottom:1.5%;*/
+    width:300px;
+    height:300px;
+    /*background:pink;*/
+    /*float:left;*/
+    overflow:hidden;
+    /*position:relative;*/
+    border-radius: 10px;
+    margin:30px 38px auto;
+}
+
+.bottom{
+    /*position:absolute;*/
+    /*bottom:0;*/
+    /*height:5%;*/
+    width:100%;
+    background:#434347;
+    text-align:center;
+    /*display: none;*/
+}
+.fourth{
+    height:700px;
+    width:100%;
+    background:#434347;
+    margin: 0 auto;
+    /*background: red;*/
+
+}
+.fourth .left{
+    /*margin-left:10%;*/
+    /*width:29%;*/
+    /*height:80%;*/
+    /*height:82%;*/
+    width:300px;
+    height:300px;
+    /*background:green;*/
+    /*float:left;*/
+    overflow:hidden;
+    /*position:relative;*/
+    border-radius: 10px;
+    margin:30px 38px auto;
+}
+.fourth .middle{
+    display: none;
+}
+.fourth .right{
+     /*margin-right:10%;*/
+     /*width:29%;*/
+     /*height:80%;*/
+     /*height:82%;*/
+     width:300px;
+     height:300px;
+     /*background:green;*/
+     /*float:left;*/
+     overflow:hidden;
+     /*position:relative;*/
+     border-radius: 10px;
+    margin:30px 38px auto;
+ }
+.foot{
+    height:60px;
+    width:100%;
+    background:#303135;
+    /*background:green;*/
+    /*position:relative;*/
+    /*display: none;*/
+}

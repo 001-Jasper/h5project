@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>音乐播放器</title>
+
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+<!--    <link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="css/MusicPlayer.css">
+    <!--自适应使用-->
+    <link media="(max-width: 500px)"  rel="stylesheet" href="css/MusicPlayerMobile.css">
+
+    <script src="js/jquery.js"></script>
+    <script  src="js/bootstrap.js"></script>
+<!--    <script src="js/jquery.min.js"></script>-->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/progress.js"></script>
+    <script src="js/lyric.js"></script>
+    <script src="js/MusicPlayer.js"></script>
+</head>
+<body>
+    <!--播放器头部-->
+    <div class="header">
+        <h1 class="logo"><a href="#"></a></h1>
+        <ul class="register">
+            <li><a href="#" onclick="call_modal()">注册</a></li>
+            <li><a href="register.html">登录</a></li>
+            <li>设置</li>
+        </ul>
+    </div>
+    <!--中间内容区-->
+    <div class="content">
+        <!--对齐下面版心用-->
+        <div class="content_in">
+            <!--中间内容分为左右两部分-->
+            <div class="content_left">
+                <!--上面的固定按钮-->
+                <div class="content_toolbar">
+                    <span><i></i>收藏</span>
+                    <span><i></i>添加到</span>
+                    <span><i></i>下载</span>
+                    <span><i></i>删除</span>
+                    <span><i></i>清空列表</span>
+                </div>
+                <!--歌单列表-->
+                <div class="content_list" data-mcs-theme="minimal-dark">
+                    <ul>
+                        <li class="list_title">
+                            <div class="list_check"><i></i></div>
+                            <div class="list_number"></div>
+                            <div class="list_name">歌曲</div>
+                            <div class="list_singer">歌手</div>
+                            <div class="list_time">时长</div>
+                        </li>
+                        <!--下面这段用jquery自动生成li填充到ul里-->
+                        <!--<li class="list_music">
+                            <div class="list_check"><i></i></div>
+                            <div class="list_number">1</div>
+                            <div class="list_name">Voyager
+                                <div class="list_menu">
+                                    <a href="javascript:" title="播放"></a>
+                                    <a href="javascript:" title="添加"></a>
+                                    <a href="javascript:" title="下载"></a>
+                                    <a href="javascript:" title="分享"></a>
+                                </div>
+                            </div>
+                            <div class="list_singer">Adam Young</div>
+                            <div class="list_time">
+                                <span>05:20</span>
+                                <a href="javascript:" title="删除"></a>
+                            </div>
+                        </li>-->
+                    </ul>
+                </div>
+            </div>
+            <div class="content_right">
+                <div class="song_info">
+                    <a href="javascript:" class="song_info_pic">
+                        <img src="images/29.jpg" alt="">
+                    </a>
+                    <div class="song_info_name">歌曲名称:
+                        <a href="javascript:">Voyager</a>
+                    </div>
+                    <div class="song_info_singer">歌手名:
+                        <a href="javascript:">Adam Young</a>
+                    </div>
+                    <div class="song_info_album">专辑名:
+                        <a href="javascript:">Voyager1</a>
+                    </div>
+                </div>
+                <div class="song_lyric_container">
+                    <ul class="song_lyric">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--底部调控信息-->
+    <div class="footer">
+        <!--对齐上面版心用-->
+        <div class="footer_in">
+            <div class="player_auto">
+                <a href="javascript:" class="music_pre"></a>
+                <a href="javascript:" class="music_play"></a>
+                <a href="javascript:" class="music_next"></a>
+            </div>
+            <div class="music_progress_info">
+                <div class="music_progress_top">
+                    <span class="music_progress_name">Voyager/Adam Young</span>
+                    <span class="music_progress_time">00:00/05:00</span>
+                </div>
+                <!--进度条由三部分组成-->
+                <div class="music_progress_bar">
+                    <div class="music_progress_line">
+                        <div class="music_progress_dot"></div>
+                    </div>
+                </div>
+            </div>
+            <a href="javascript:" class="music_mode"></a>
+            <a href="javascript:" class="music_fav"></a>
+            <a href="javascript:" class="music_down"></a>
+            <a href="javascript:" class="music_comment"></a>
+            <a href="javascript:" class="music_only"></a>
+            <div class="music_voice_info">
+                <a href="javascript:" class="music_voice_icon"></a>
+                <!--进度条由三部分组成-->
+                <div class="music_voice_bar">
+                    <div class="music_voice_line">
+                        <div class="music_voice_dot"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--背景-->
+<div class="mask_bg"></div>
+<!--遮罩-->
+    <div class="mask"></div>
+<!--播放音乐-->
+<audio src=""></audio>
+
+<!--    &lt;!&ndash; 用户注册模态框 &ndash;&gt;-->
+<!--    <div class="modal fade" id="RegisterModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">-->
+<!--        <div class="modal-dialog">-->
+<!--            <div class="modal-content">-->
+<!--                <div class="modal-header">-->
+<!--                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--                        <span aria-hidden="true">&times;</span>-->
+<!--                    </button>-->
+<!--                    <h4 class="modal-title" id="myModalLabel">用户注册</h4>-->
+<!--                </div>-->
+<!--                <div class="modal-body">-->
+<!--                    <form class="form-horizontal" id="new_customer_form">-->
+<!--                        <div class="form-group">-->
+<!--                            <label class="col-sm-2 control-label">用户名</label>-->
+<!--                            <div class="col-sm-10">-->
+<!--                                <input type="text" class="form-control" id="new_username" placeholder="用户名" name="username" />-->
+<!--                                <span class="help-block"></span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="form-group">-->
+<!--                            <label class="col-sm-2 control-label">密码</label>-->
+<!--                            <div class="col-sm-10">-->
+<!--                                <input type="password" class="form-control" id="new_password" placeholder="请输入密码" name="pwd" />-->
+<!--                                <span class="help-block"></span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="form-group">-->
+<!--                            <label class="col-sm-2 control-label">性别</label>-->
+<!--                            <div class="col-sm-10">-->
+<!--                                <select	class="form-control" id="gender" name="gender">-->
+<!--                                    <option value="">&#45;&#45;请选择&#45;&#45;</option>-->
+<!--                                    <option value="M">男</option>-->
+<!--                                    <option value="W">女</option>-->
+<!--                                </select>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="form-group">-->
+<!--                            <label class="col-sm-2 control-label">电话</label>-->
+<!--                            <div class="col-sm-10">-->
+<!--                                <input type="text" class="form-control" id="new_phone" placeholder="请输入电话，找回密码时使用!" name="phone" />-->
+<!--                                <span class="help-block"></span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </form>-->
+<!--                    <div class="modal-footer">-->
+<!--                        <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>-->
+<!--                        <button type="button" class="btn btn-success" id="save_customer_btn" >注册</button>-->
+<!--                    </div>-->
+<!--                </div>&lt;!&ndash; modal body &ndash;&gt;-->
+<!--            </div>&lt;!&ndash; /.modal-content &ndash;&gt;-->
+<!--        </div>&lt;!&ndash; /.modal-dialog &ndash;&gt;-->
+<!--    </div>-->
+
+<!--模态框的javascript-->
+<script>
+    //点击注册弹出注册模态框
+    function call_modal() {
+        //由于ajax不刷新，需要调用清空表单样式和数据的函数
+        reset_form("#new_customer_form");
+        //弹出模态框
+        $("#RegisterModal").modal('show');
+    }
+    //清空表单数据和样式的函数
+    function reset_form(ele){
+        //调用js对象的reset方法重置表单内容
+        $(ele)[0].reset();
+        //清空表单样式,先把样式去掉，再把提示去掉
+        $(ele).find("*").removeClass("has-error has-success");
+        $(ele).find(".help-block").text("");
+    }
+    //显示校验信息函数
+    function show_validation(ele,status,msg){
+        //还要清除当前元素校验状态
+        $(ele).parent().removeClass("has-success has-error");
+        $(ele).next("span").text("");
+        if("success" == status){
+            $(ele).parent().addClass("has-success");
+            $(ele).next("span").text(msg);
+        }else if("error" == status){
+            $(ele).parent().addClass("has-error");
+            $(ele).next("span").text(msg);
+        }
+    }
+    //点击注册保存按钮时进行ajax校验，jquery校验，然后发送ajax保存注册用户请求
+    $(function () {
+        $("#save_customer_btn").click(function(){
+            //校验检测用户名重复的ajax是否是校验通过状态
+            if($(this).attr("ajax_sta") == "error"){
+                return false;
+            };
+            //前端jquery校验表单数据
+            if(!validate_save_customer()){
+                return false;
+            };
+        });
+    })
+    //注册用jquery前端校验信息函数
+    function validate_save_customer(){
+        //获取要校验的数据，用正则表达式
+        var username = $("#new_username").val();
+        var password = $("#new_password").val();
+        var phone = $("#new_phone").val();
+        //允许3-10为字母数字下划线或者2-5位中文
+        var regname = /(^[a-zA-z0-9_-]{3,10}$)|(^[\u2E80-\u9FFF]{2,5}$)/;
+        //密码为6-16位字母数字下划线
+        var regpassword = /^[a-zA-z0-9_-]{6,16}$/;
+        //code码为11位纯数字组成
+        var regphone = /^[0-9]{11}$/;
+
+        //校验username
+        if(!regname.test(username)){
+            //找到输入框父元素加class类
+            show_validation("#new_username","error","用户名只能是3-10位字母数字下划线或者2-5位中文！");
+            return false;
+        }else{
+            show_validation("#new_username","success","用户名可使用！");
+        }
+        //校验密码
+        if(!regpassword.test(password)){
+            //找到输入框父元素加class类
+            show_validation("#new_password","error","密码为6-16位字母数字下划线!");
+            return false;
+        }else{
+            show_validation("#new_password","success","密码验证通过！");
+        }
+        //校验phone
+        if(!regphone.test(phone)){
+            //找到输入框父元素加class类
+            show_validation("#new_phone","error","电话号码只能为11位数字!");
+            return false;
+        }else{
+            show_validation("#new_phone","success","校验通过！");
+        }
+        return true;
+    }
+</script>
+</body>
+</html>

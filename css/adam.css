@@ -1,0 +1,364 @@
+*{margin:0;padding:0;}
+	html,body{height:100%;width:100%;}
+		.first{
+			width: 100%;
+			height:163px;
+			background:#303135;
+		}
+		.first h1{
+			font-family:'consolas';
+			padding-top:67px;
+			padding-left:59px;
+			color:white;
+		}
+		.first h1 span{
+			color:#acadae;
+		}
+		.third{
+			height:10%;
+			width:100%;
+			background:#434347;
+		}
+		.second{
+			width:100%;
+			height:205%;
+			background:#434347;
+			position:relative;
+		}
+.second .second_in{
+	width:1400px;
+	height: 100%;
+
+	margin: 0 auto;
+}
+		.second_in .second_left{
+			margin-bottom:1.5%;
+			margin-left:5%;
+			width:29%;
+			height:29%;
+			-background:green;
+			float:left;
+			overflow:hidden;
+			position:relative;
+			 border-radius: 10px;
+		}
+		.second_in .second_left p{
+			position:absolute;
+			bottom:0;
+			width:100%;
+			height:25%;
+			background:#434347;
+			opacity:0.5;	
+		}
+		.second_in .second_left span{
+			position:absolute;
+			bottom:0;
+			text-align:center;
+			display:block;
+			height:20%;
+			width:100%;
+			font-family:'consolas';
+			font-size:20px;
+			color:white;
+			white-space:nowrap;
+			-background:green;
+		}
+.second_in .second_left h4{
+			position:absolute;
+			bottom:0;
+			text-align:center;
+			display:block;
+			height:10%;
+			width:100%;
+			font-family:'\5b8b\4f53';
+			color:white;
+			font-size:13px;
+			-background:red;
+		}
+.second_in .second_left img{
+			height:100%;
+			width:100%;
+			transition: all 0.5s;/*图片放大过程的时间*/
+			opacity:0.7;
+		}
+.second_in .second_left img:hover{
+			transform: scale(1.05);/*鼠标移上去时的放大倍数*/
+			opacity:1;
+		}
+
+.second_in .second_middle{
+			margin-left:1.5%;
+			margin-right:1.5%;
+			margin-bottom:1.5%;
+			width:29%;
+			height:29%;
+			-background:orange;
+			float:left;
+			overflow:hidden;
+			position:relative;
+			 border-radius: 10px;
+		}
+.second_in .second_middle p{
+			position:absolute;
+			bottom:0;
+			width:100%;
+			height:25%;
+			background:#434347;
+			opacity:0.5;	
+		}
+.second_in .second_middle span{
+			position:absolute;
+			bottom:0;
+			text-align:center;
+			display:block;
+			height:20%;
+			width:100%;
+			font-family:'consolas';
+			font-size:20px;
+			color:white;
+			white-space:nowrap;
+			-background:green;
+		}
+.second_in .second_middle h4{
+			position:absolute;
+			bottom:0;
+			text-align:center;
+			display:block;
+			height:10%;
+			width:100%;
+			font-family:'\5b8b\4f53';
+			color:white;
+			font-size:13px;
+			-background:red;
+		}
+.second_in .second_middle img{
+			height:100%;
+			width:100%;
+			transition: all 0.5s;/*图片放大过程的时间*/
+			opacity:0.7;
+		}
+.second_in .second_middle img:hover{
+				transform: scale(1.05);/*鼠标移上去时的放大倍数*/
+				opacity:1;
+				
+		}
+
+.second_in .second_right{
+			margin-right:5%;
+			margin-bottom:1.5%;
+			width:29%;
+			height:29%;
+			-background:pink;
+			float:left;
+			overflow:hidden;
+			position:relative;
+			 border-radius: 10px;
+		}
+.second_in .second_right p{
+			position:absolute;
+			bottom:0;
+			width:100%;
+			height:25%;
+			background:#434347;
+			opacity:0.5;	
+		}
+.second_in .second_right span{
+			position:absolute;
+			bottom:0;
+			text-align:center;
+			display:block;
+			height:20%;
+			width:100%;
+			font-family:'consolas';
+			font-size:20px;
+			color:white;
+			white-space:nowrap;
+			-background:green;
+		}
+.second_in .second_right h4{
+			position:absolute;
+			bottom:0;
+			text-align:center;
+			display:block;
+			height:10%;
+			width:100%;
+			font-family:'\5b8b\4f53';
+			color:white;
+			font-size:13px;
+			-background:red;
+		}
+.second_in .second_right img{
+			height:100%;
+			width:100%;
+			transition: all 0.5s;/*图片放大过程的时间*/
+			opacity:0.7;
+		}
+.second_in .second_right img:hover{
+				transform: scale(1.05);/*鼠标移上去时的放大倍数*/
+				opacity:1;				
+		}
+		.bottom{
+			/*position:absolute;*/
+			bottom:0;
+			height:5%;
+			width:100%;
+			background:#434347;
+			text-align:center;
+		}
+		.bottom a{
+			text-decoration:none;
+			font-family:'\5b8b\4f53';
+			color:white;
+			font-size:20px;	
+			font-weight:bold;
+		}
+		.bottom a:hover{
+			color:#56e596;
+		}
+		.fourth{
+			height:70%;
+			width:100%;
+			background:#434347;
+		}
+		.fourth .left{
+			margin-left:10%;
+			width:29%;
+			height:80%;
+			height:82%;
+			-background:green;
+			float:left;
+			overflow:hidden;
+			position:relative;
+			 border-radius: 10px;
+		}
+		.fourth .left img{
+			height:100%;
+			width:100%;
+			transition: all 0.5s;/*图片放大过程的时间*/
+			opacity:0.7;
+		}
+		.fourth .left img:hover{
+				transform: scale(1.05);/*鼠标移上去时的放大倍数*/
+				opacity:1;				
+		}
+		.fourth .left p{
+			position:absolute;
+			bottom:0;
+			width:100%;
+			height:25%;
+			background:#434347;
+			opacity:0.5;	
+		}
+		.fourth .left span{
+			position:absolute;
+			bottom:0;
+			text-align:center;
+			display:block;
+			height:20%;
+			width:100%;
+			font-family:'consolas';
+			font-size:20px;
+			color:white;
+			white-space:nowrap;
+			-background:green;
+		}
+		.fourth .left h4{
+			position:absolute;
+			bottom:0;
+			text-align:center;
+			display:block;
+			height:10%;
+			width:100%;
+			font-family:'\5b8b\4f53';
+			color:white;
+			font-size:13px;
+			-background:red;
+		}
+		.fourth .middle{
+			margin-left:1.5%;
+			margin-right:1.5%;
+			margin-bottom:1.5%;
+			width:19%;
+			height:82%;
+			-background:orange;
+			float:left;
+			overflow:hidden;
+			position:relative;
+			text-align:center;
+		}
+		
+		.fourth .right{
+			margin-right:10%;
+			width:29%;
+			height:80%;
+			height:82%;
+			-background:green;
+			float:left;
+			overflow:hidden;
+			position:relative;
+			 border-radius: 10px;
+		}
+		.fourth .right img{
+			height:100%;
+			width:100%;
+			transition: all 0.5s;/*图片放大过程的时间*/
+			opacity:0.7;
+		}
+		.fourth .right img:hover{
+				transform: scale(1.05);/*鼠标移上去时的放大倍数*/
+				opacity:1;				
+		}
+		.fourth .right p{
+			position:absolute;
+			bottom:0;
+			width:100%;
+			height:25%;
+			background:#434347;
+			opacity:0.5;	
+		}
+		.fourth .right span{
+			position:absolute;
+			bottom:0;
+			text-align:center;
+			display:block;
+			height:20%;
+			width:100%;
+			font-family:'consolas';
+			font-size:20px;
+			color:white;
+			white-space:nowrap;
+			-background:green;
+		}
+		.fourth .right h4{
+			position:absolute;
+			bottom:0;
+			text-align:center;
+			display:block;
+			height:10%;
+			width:100%;
+			font-family:'\5b8b\4f53';
+			color:white;
+			font-size:13px;
+			-background:red;
+		}
+		.foot{
+			height:15%;
+			width:100%;
+			background:#303135;
+			-background:pink;
+			position:relative;
+		}
+		.foot p{
+			text-align:center;
+			position:absolute;
+			margin-top:3%;
+			width:100%;
+			height:40%;
+			-background:orange;
+			font-family:'consolas';
+			font-size:15px;
+			color:white;
+			white-space:nowrap;
+		}
+		
+		

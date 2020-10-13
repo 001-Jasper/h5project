@@ -1,0 +1,74 @@
+[
+	{
+		"name": "The 5th of July",
+		"singer": "Owl City",
+		"album": "The 5th of July",
+		"time": "04:11",
+		"link_url": "./source/Owl City - The 5th of July.mp3",
+		"cover": "./source/33.jpg",
+		"link_lrc": "./source/Owl City - The 5th of July.txt"
+	},
+	{
+		"name": "斎唄-いわいうた- full version",
+		"singer": "瀧沢一留",
+		"album": "倭人異聞録～あさき、ゆめみし",
+		"time": "05:52",
+		"link_url": "./source/瀧沢一留 - 斎唄-いわいうた (祝歌) (full version).mp3",
+		"cover": "./source/20.jpg",
+		"link_lrc": "./source/瀧沢一留 - 斎唄-いわいうた (祝歌) (full version).txt"
+	},
+	{
+		"name": "Delicate",
+		"singer": "Taylor Swift",
+		"album": "Reputation",
+		"time": "03:52",
+		"link_url": "./source/Taylor Swift - Delicate.mp3",
+		"cover": "./source/17.jpg",
+		"link_lrc": "./source/Taylor Swift - Delicate.txt"
+	},
+	{
+		"name": "Suspension (Acoustic)",
+		"singer": "Lights",
+		"album": "Siberia(Acoustic)",
+		"time": "03:37",
+		"link_url": "./source/Lights - Suspension (Acoustic).mp3",
+		"cover": "./source/18.jpg",
+		"link_lrc": "./source/Lights - Suspension (Acoustic).txt"
+	},
+	{
+		"name": "鎮命歌 -しずめうた-",
+		"singer": "瀧沢一留",
+		"album": "あさき、ゆめみし",
+		"time": "05:03",
+		"link_url": "./source/瀧沢一留 - 鎮命歌 -しずめうた-.mp3",
+		"cover": "./source/19.jpg",
+		"link_lrc": "./source/瀧沢一留 - 鎮命歌 -しずめうた-.txt"
+	},
+	{
+		"name": "Wolf Bite",
+		"singer": "Owl City",
+		"album": "Ultraviolet",
+		"time": "03:50",
+		"link_url": "./source/Owl City - Wolf Bite.mp3",
+		"cover": "./source/21.jpg",
+		"link_lrc": "./source/Owl City - Wolf Bite.txt"
+	},
+	{
+		"name": "I Don't Wanna Live Forever",
+		"singer": "ZAYN / Taylor Swift",
+		"album": "Fifty Shades Darker",
+		"time": "04:05",
+		"link_url": "./source/ZAYN _ Taylor Swift - I Don't Wanna Live Forever (Fifty Shades Darker).mp3",
+		"cover": "./source/22.jpg",
+		"link_lrc": "./source/ZAYN _ Taylor Swift - I Don't Wanna Live Forever (Fifty Shades Darker).txt"
+	},
+	{
+		"name": "White Noise",
+		"singer": "Ella Vos",
+		"album": "White Noise",
+		"time": "03:42",
+		"link_url": "./source/Ella Vos - White Noise.mp3",
+		"cover": "./source/23.jpg",
+		"link_lrc": "./source/Ella Vos - White Noise.txt"
+	}
+]
