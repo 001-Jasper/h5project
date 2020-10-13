@@ -5,11 +5,23 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<meta name="toTop" content="true">
 	<title>音乐推荐</title>
-	<link rel="shortcut icon" href="img/icon_yang.jpg">
+	<link rel="shortcut icon" href="icon_yang.jpg">
 	<link media="(min-width:760px)"rel="stylesheet" href="./css_yang/recommend.css">
 	<link media="(max-width:760px)" rel="stylesheet"  type="text/css" href="./css_yang/mobile_recommend.css">
 	<script src="http://www.jq22.com/jquery/1.8.3/jquery.min.js"></script>
 	<script type="text/javascript" src="./jquery_yang/toTop.js"></script>
+	<script type="text/javascript">
+        onload = function () {
+            document.getElementById('btn').onclick = function () {
+                var dvObj = document.getElementById('dv');
+                if (dvObj.style.display == 'none') {
+                    dvObj.style.display = 'block';
+                } else {
+                    dvObj.style.display = 'none';
+                }
+            };
+        };
+    </script>
 </head>
 <body>
 	<!-- 头部分 -->
@@ -22,7 +34,11 @@
 			<img class="logo_pc" src="./img/logo.png">
 			<img class="logo_mobile" src="./img/logo.png">
 		</a>
-		<div class="header_menu">
+		<!-- <label for="control" class="nav_btn">菜单</label>
+		<input type="checkbox" id="control" class="nav_con"> -->
+		<input type="button" name="name" value="菜单" id="btn" class="button_menu" />
+    	<!-- <div class="button_div" id="dv"> -->
+		<div class="header_menu" id="dv">
 			<ul>
 				<li><a href="#">音乐馆</a></li>
 				<li><a href="#">我的音乐</a></li>
@@ -31,8 +47,6 @@
 				<li><a href="#">VIP</a></li>
 			</ul>
 		</div>
-		<label for="control" class="nav_btn">菜单</label>
-		<input type="checkbox" id="control" class="nav_con">
 		<div class="search">
 			<input class="a" type="text" placeholder="搜索音乐、MV、歌单、用户..." >
 			<a href="#" target="_blank" class="search_out"><img class="search_icon" src="./img/search.png"></a>
