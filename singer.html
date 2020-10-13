@@ -5,11 +5,23 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<meta name="toTop" content="true">
 	<title>歌手详情</title>
-	<link rel="shortcut icon" href="img/icon_yang.jpg">
+	<link rel="shortcut icon" href="icon_yang.jpg">
 	<link media="(min-width:760px)"rel="stylesheet" href="./css_yang/singer.css">
 	<link media="(max-width:760px)" rel="stylesheet"  type="text/css" href="./css_yang/mobile_singer.css">
 	<script src="http://www.jq22.com/jquery/1.8.3/jquery.min.js"></script>
 	<script type="text/javascript" src="./jquery_yang/toTop.js"></script>
+	<script type="text/javascript">
+        onload = function () {
+            document.getElementById('btn').onclick = function () {
+                var dvObj = document.getElementById('dv');
+                if (dvObj.style.display == 'none') {
+                    dvObj.style.display = 'block';
+                } else {
+                    dvObj.style.display = 'none';
+                }
+            };
+        };
+    </script>
 </head>
 <body>
 	<!-- 头部分 -->
@@ -53,24 +65,24 @@
 			<div class="singer_intro">
 				<div class="intro_txt" id="short_show">
 					<a href="#">外文名：G.E.M.(Get Everybody Moving)、Gloria Tang 别名：金鱼|G.E.M.|邓宝|...</a>
-					<input type="button" name="更多" class="button_more">
-					<div id="singer_content">
+					<input type="button" name="name" value="更多" id="btn" />
+					<div class="singer_content" id="dv">
 					<h3>歌手简介</h3><br>
-					外文名：G.E.M.(Get Everybody Moving)、Gloria Tang
+					外文名：G.E.M.(Get Everybody Moving)、Gloria Tang<br>
 
 别名：金鱼|G.E.M.|邓宝|棋宝|Gloria|棋棋|小金鱼|金鱼G.E.M.|小巨肺|解解
 
-原名：邓诗颖
+<br>原名：邓诗颖<br>
 
-国籍：中国
+国籍：中国<br>
 
-出生地：上海
+出生地：上海<br>
 
-出生日期：1991年8月16日
+出生日期：1991年8月16日<br>
 
-职业：歌手
+职业：歌手<br>
 
-代表作品：《睡公主》、《回忆的沙漏》、《A.I.N.Y.》、《我的秘密》、《泡沫》、《奇迹》、《偶尔》
+代表作品：《睡公主》、《回忆的沙漏》、《A.I.N.Y.》、《我的秘密》、《泡沫》、《奇迹》、《偶尔》<br>
 
 主要成就：第27届美国KCA亚洲最受欢迎艺人、IPFI香港唱片全年最高销量女歌手、第24届金曲奖最佳国语女歌手提名、最年轻登上红馆开个唱的女歌手、叱咤乐坛生力军金奖首位未成年获奖、第二届 QQ音乐年度盛典年度最佳港台女歌手、QQ音乐巅峰榜人气搜索奖
 
