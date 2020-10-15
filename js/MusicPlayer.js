@@ -179,12 +179,16 @@ $(function () {
                 $(this).parents(".list_music").siblings().find(".list_number").removeClass("list_number2");
 
                 //播放音乐
-                player.playMusic($(this).parents(".list_music").get(0).index,$(this).parents(".list_music").get(0).music);
+               var testmusic =  player.playMusic($(this).parents(".list_music").get(0).index,$(this).parents(".list_music").get(0).music);
+                console.log(testmusic);
+                //切换歌词信息,导致暂停会初始化歌词,所以加上上面的测试
 
+                if(!testmusic){
+                    initMusicLyric($(this).parents(".list_music").get(0).music);
+                }
                 //切换歌曲信息
                 initMusicInfo($(this).parents(".list_music").get(0).music);
-                //切换歌词信息
-                initMusicLyric($(this).parents(".list_music").get(0).music);
+
                 //重制一下margin
                 $(".song_lyric").css({
                     marginTop:0
