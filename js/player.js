@@ -21,11 +21,13 @@
                 }else{
                     this.audio.pause();
                 }
+                return 1;
             }else{
                 //不是同一首
                 this.$audio.attr("src",music.link_url);
                 this.audio.play();
                 this.currentIndex = index;
+                return 0;
             }
         },
         preIndex:function () {
