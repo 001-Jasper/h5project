@@ -189,10 +189,7 @@ $(function () {
                 //切换歌曲信息
                 initMusicInfo($(this).parents(".list_music").get(0).music);
 
-                //重制一下margin
-                $(".song_lyric").css({
-                    marginTop:0
-                });
+               
             });
 
             //4.监听底部控制区域播放按钮的点击
